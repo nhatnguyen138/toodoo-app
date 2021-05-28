@@ -1,0 +1,6 @@
+# Dependencies
+/server/node_modules
+
+# Misc
+/server/.env
+/server/app.rest
