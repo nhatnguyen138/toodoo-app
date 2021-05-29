@@ -1,0 +1,60 @@
+@import "base";
+@import "notes";
+
+// Template Layouts
+@media only screen and (max-width: 750px) {     // Mobile
+    #Menu {
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 751px) {     // Desktop
+    #HomeContainer, #AboutContainer {
+        padding: 20px;
+        padding-left: 5px;
+        display: grid;
+        grid-template-columns: 2fr minmax(330px,460px);
+        grid-template-areas:
+            "notes aside";
+        #Menu {
+            display: none;
+        }
+        #Main {
+            grid-area: notes;
+            margin: 20px 7px 10px 7px;
+        }
+        #Aside {
+            grid-area: aside;
+            min-width: 300px;
+            display: flex;
+            flex-direction: column;
+            margin-top: 20px; //temporary layouts
+        }
+    }
+}
+
+@media only screen and (min-width: 1290px) {    // Wide screen
+    #HomeContainer, #AboutContainer {
+        margin: auto;
+        max-width: 1400px;
+        display: grid;
+        grid-template-columns: minmax(200px,250px) 1fr minmax(350px,460px);
+        grid-template-areas:
+            "menu notes aside";
+        grid-gap: 15px;
+        #Menu {
+            grid-area: menu;
+            display: block;
+        }
+        #Main {
+            grid-area: notes;
+            .NotePaper {
+                width: 550px;
+                height: 550px;
+            }
+        }
+        #Aside {
+            grid-area: aside;
+        }
+    }
+}

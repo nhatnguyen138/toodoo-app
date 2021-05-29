@@ -1,0 +1,116 @@
+#NotesCategories {
+    .Header {
+        background-color: $yellow;
+        color: black;
+        box-shadow:
+            6px 6px 8px 0 rgba(0,0,0,0.25),
+            -8px -8px 10px 0 rgba(0,0,0,0.3);
+        font-size: 1.3rem;
+        margin: 30px 12px 10px 12px;
+        padding: 10px;
+        .ButtonGroup {
+            position: relative;
+            float: right;
+            bottom: 4px;
+            #ManageCategories {
+                background-color: $dark;
+                color: white;
+                font-family: $default-font;
+                font-size: 0.9rem;
+                border: 1px solid $dark;
+                border-radius: 5px;
+            }
+            #CollapsedSection {
+                width: 40px;
+                height: 40px;
+                background-color: $yellow;
+                color: $dark;
+                border: 1px solid $dark;
+                border-radius: 50%;
+                margin-left: 10px;
+            }
+        }
+    }
+    .CategoriesList {
+        display: none;
+        background-color: $dark;
+        color: white;
+        margin: 0 12px 10px 12px;
+        padding: 15px;
+        .CategoryName {
+            font-family: $default-font;
+            font-size: 1.1rem;
+            font-weight: bold;
+            a {
+                text-decoration: none;
+                font-size: 0.95rem;
+                font-weight: normal;
+                font-style: italic;
+                color: white;
+            }
+        }
+        hr {
+            background-color: white;
+            opacity: 0.7;
+        }
+    }
+}
+
+#Pinned {
+    .Header {
+        background-color: $yellow;
+        color: black;
+        box-shadow:
+            6px 6px 8px 0 rgba(0,0,0,0.25),
+            -8px -8px 10px 0 rgba(0,0,0,0.3);
+        font-size: 1.3rem;
+        margin: 30px 12px 10px 12px;
+        padding: 10px;
+        #CollapsedSection {
+            position: relative;
+            float: right;
+            bottom: 4px;
+            width: 40px;
+            height: 40px;
+            background-color: $yellow;
+            color: $dark;
+            border: 1px solid $dark;
+            border-radius: 50%;
+            margin-left: 10px;
+        }
+    }
+    .TodoNotes {
+        display: none;
+        background-color: $dark;
+        color: white;
+        margin: 0 12px 10px 12px;
+        padding: 15px;
+    }
+    a {
+        text-decoration: none;
+        font-size: 0.95rem;
+        font-weight: normal;
+        font-style: italic;
+        color: white;
+    }
+}
+
+#Notes {
+    .NotePaper {
+        background-color: $yellow;
+        color: black;
+        box-shadow:
+            6px 6px 8px 0 rgba(0,0,0,0.25),
+            -8px -8px 10px 0 rgba(0,0,0,0.3);
+        border-radius: 0 0 10px 0;
+        .Title {
+            font-size: 1.3rem;
+            font-weight: bold;
+            margin: 5px 0 5px 0;
+        }
+        .Content {
+            font-family: $default-font;
+            padding: 5px;
+        }
+    }
+}
