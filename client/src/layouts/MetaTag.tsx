@@ -4,12 +4,20 @@ import Logo from '../assets/TooDooLogo.png'
 
 export default function MetaTag(props:MetaTagDef) {
     let {section} = props
-    if (section!=="")
+    if (section!=="") {
         section+=" | "
-    return (
-        <Helmet>
-            <title>{section}TooDoo</title>
-            <link rel="icon" href={Logo}/>
-        </Helmet>
-    )
+        return (
+            <Helmet>
+                <title>{section}TooDoo</title>
+                <link rel="icon" href={Logo}/>
+            </Helmet>
+        )
+    }
+    else
+        return (
+            <Helmet>
+                <title>TooDoo - A minimalistic note app</title>
+                <link rel="icon" href={Logo}/>
+            </Helmet>
+        )
 }

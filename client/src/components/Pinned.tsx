@@ -1,5 +1,5 @@
 import { useState, useEffect ,useRef } from 'react'
-import { Link } from 'react-router-dom'
+import AnchorLink from 'react-anchor-link-smooth-scroll'
 import { Button } from 'reactstrap'
 
 import { NoteDef } from '../utils/TypeDef'
@@ -44,11 +44,11 @@ export default function Pinned() {
                 {
                     notes?.length!==0 ? notes && notes.map((note,i) => {
                         return (
-                            <Link to={`#${note._id}`} key={i}>
+                            <AnchorLink href={`#${note._id}`} key={i}>
                                 <div id="NoteTitle" style={{marginLeft: "15px",padding:"3px"}}>
                                     {note.title}
                                 </div>
-                            </Link>
+                            </AnchorLink>
                         )
                         
                     })

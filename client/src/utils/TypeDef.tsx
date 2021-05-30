@@ -14,6 +14,6 @@ export interface CategoryDef {
     name: String,
     titles: [{
         _id: String,
-        title: String
+        title?: string
     }]
 }

@@ -1,5 +1,5 @@
 import { useState, useEffect ,useRef } from 'react'
-import { Link } from 'react-router-dom'
+import AnchorLink from 'react-anchor-link-smooth-scroll'
 import { Button, ButtonGroup } from 'reactstrap'
 
 import { CategoryDef } from '../utils/TypeDef'
@@ -49,11 +49,11 @@ export default function CategoriesList() {
                         if (category.titles.length>0) {
                             const NoteTitle = category.titles.map((title,j) => {
                                 return (
-                                    <Link to={`#${title._id}`} key={j}>
+                                    <AnchorLink href={`#${title._id}`} key={j}>
                                         <div id="NoteTitle" style={{marginLeft: "15px",padding:"3px"}}>
                                             {title.title}
                                         </div>
-                                    </Link>
+                                    </AnchorLink>
                                 )   
                             })
 
