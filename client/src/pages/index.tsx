@@ -1,5 +1,7 @@
 import MetaTag from '../layouts/MetaTag'
 import Menu from '../layouts/Menu'
+import Pinned from '../components/Pinned'
+import CategoriesList from '../components/CategoriesList'
 
 export default function HomePage() {  
     return (
@@ -7,7 +9,8 @@ export default function HomePage() {
             <MetaTag section="" />
             <Menu />
             <div id="Aside">
-                Aside
+                <Pinned />
+                <CategoriesList />
             </div>
             <div id="Notes">
                 Notes
