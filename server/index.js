@@ -6,7 +6,7 @@ require('dotenv').config()
 const noteRouter = require('./routes/note')
 const categoryRouter = require('./routes/category')
 
-const PORT = 5000 || process.env.PORT
+const PORT = 8080 || process.env.PORT
 
 const connectDB = async () => {
     try {
