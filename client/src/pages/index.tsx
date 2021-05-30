@@ -2,6 +2,7 @@ import MetaTag from '../layouts/MetaTag'
 import Menu from '../layouts/Menu'
 import Pinned from '../components/Pinned'
 import CategoriesList from '../components/CategoriesList'
+import NotesList from '../components/NotesList'
 
 export default function HomePage() {  
     return (
@@ -12,9 +13,7 @@ export default function HomePage() {
                 <Pinned />
                 <CategoriesList />
             </div>
-            <div id="Notes">
-                Notes
-            </div>
+            <NotesList />
         </div>
     )
 }
