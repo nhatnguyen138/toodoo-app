@@ -19,6 +19,7 @@ export default function App() {
         <Switch>
           <Route exact path="/" component={HomePage} />
           <Route exact path="/about" component={AboutPage} />
+          <Redirect to="/" />
         </Switch>
       </Router>
     </div>
